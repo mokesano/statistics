@@ -1,6 +1,6 @@
 # 📊 Statistics Plugin for OJS — *Archived Edition*
 
-**Plugin visualisasi statistik berbasis grafik untuk Open Journal Systems (OJS) versi 2.4.3 hingga 2.4.8-1. Plugin ini membaca data dari tabel `METRICS` dan menyajikannya dalam bentuk grafik interaktif langsung dari dashboard editor.**
+**A graph-based statistics visualization plugin for Open Journal Systems (OJS) version 2.4.3 to 2.4.8-1. It reads data from the `METRICS` table and presents interactive charts directly on the editor's dashboard.**
 
 ---
 
@@ -14,79 +14,79 @@
 
 <br>
 
-> ⚠️ **Repositori ini telah di-arsipkan.** Tidak ada pengembangan, pembaruan, atau dukungan lebih lanjut. Plugin ini hanya kompatibel dengan **OJS 2.4.x** dan tidak akan berfungsi pada OJS 3.x ke atas.
+> ⚠️ **This repository has been archived.** There will be no further development, updates, or support. This plugin is only compatible with **OJS 2.4.x** and will not work on OJS 3.x or later.
 
 ---
 
-## 📖 Latar Belakang
+## 📖 Background
 
-Plugin ini merupakan versi yang diperbarui dari plugin statistik lawas yang pertama kali dipublikasikan pada tahun 2013 di forum PKP. Tujuannya sederhana: memberikan visualisasi data statistik yang tersimpan di tabel `METRICS` OJS secara langsung di antarmuka editor, tanpa perlu menggunakan aplikasi analitik eksternal.
+This plugin is an updated version of an older statistics plugin first published in 2013 on the PKP forum. Its goal is simple: to visualize the statistical data stored in the OJS `METRICS` table directly within the editor interface, without requiring external analytics tools.
 
-**Fork ini** dipertahankan oleh [mokesano](https://github.com/mokesano) sebagai cadangan dan referensi historis. Versi asli dikembangkan oleh **Fran Máñez** (Universitat Politècnica de Catalunya · BarcelonaTech).
+**This fork** is maintained by [mokesano](https://github.com/mokesano) as a backup and historical reference. The original version was developed by **Fran Máñez** (Universitat Politècnica de Catalunya · BarcelonaTech).
 
 ---
 
-## ⚙️ Kompatibilitas
+## ⚙️ Compatibility
 
-| Komponen | Versi |
+| Component | Version |
 | :--- | :--- |
 | **OJS** | 2.4.3, 2.4.4-0, 2.4.4-1, 2.4.5, 2.4.6, 2.4.7, 2.4.7-1, 2.4.8, 2.4.8-1 |
 | **PHP** | 5.x |
-| **Database** | MySQL (tabel `METRICS`) |
+| **Database** | MySQL (table `METRICS`) |
 
-> ❌ **Tidak kompatibel dengan OJS 3.x** — arsitektur plugin dan struktur database telah berubah total.
+> ❌ **Not compatible with OJS 3.x** — the plugin architecture and database structure have completely changed.
 
 ---
 
-## 📦 Instalasi
+## 📦 Installation
 
-1. Unduh kode dari [repositori ini](https://github.com/mokesano/statistics).
-2. Ganti nama folder menjadi `statistics/`.
-3. Kompres folder menjadi `statistics.tar.gz`:
+1. Download the code from [this repository](https://github.com/mokesano/statistics).
+2. Rename the folder to `statistics/`.
+3. Compress the folder into `statistics.tar.gz`:
    ```bash
    tar -pczf statistics.tar.gz statistics/
    ```
-4. Masuk ke OJS: **Home → User → Journal Management → Plugin Management → Install A New Plugin**.
-5. Unggah file `statistics.tar.gz`.
+4. Go to OJS: **Home → User → Journal Management → Plugin Management → Install A New Plugin**.
+5. Upload the `statistics.tar.gz` file.
 
 ---
 
-## 🧩 Struktur Plugin
+## 🧩 Plugin Structure
 
-| Berkas | Fungsi |
+| File | Function |
 | :--- | :--- |
-| `index.php` | Entry point plugin |
-| `StatisticsPlugin.inc.php` | Registrasi plugin ke OJS |
-| `StatisticsHandler.inc.php` | Handler permintaan data statistik |
-| `StatisticsChartsDAO.inc.php` | Akses data ke tabel `METRICS` |
-| `index.tpl` | Template utama (Smarty) |
-| `css/` | Stylesheet |
-| `js/` | Grafik interaktif |
-| `locale/` | Terjemahan |
-| `version.xml` | Metadata plugin (v1.0.0.0) |
+| `index.php` | Plugin entry point |
+| `StatisticsPlugin.inc.php` | Plugin registration to OJS |
+| `StatisticsHandler.inc.php` | Handles statistics data requests |
+| `StatisticsChartsDAO.inc.php` | Data access to `METRICS` table |
+| `index.tpl` | Main template (Smarty) |
+| `css/` | Stylesheets |
+| `js/` | Interactive charts |
+| `locale/` | Translations |
+| `version.xml` | Plugin metadata (v1.0.0.0) |
 
 ---
 
-## 📄 Lisensi
+## 📄 License
 
-**GNU General Public License v2.0** — sama dengan lisensi OJS itu sendiri.
+**GNU General Public License v2.0** — same as the OJS license.
 
 ---
 
-## 🙏 Penghargaan
+## 🙏 Acknowledgments
 
-| 🏷️ Atribusi | 🔗 Referensi |
+| 🏷️ Attribution | 🔗 Reference |
 | :--- | :--- |
-| **Pengembang Asli** | Fran Máñez — [fran.upc@gmail.com](mailto:fran.upc@gmail.com) |
+| **Original Developer** | Fran Máñez — [fran.upc@gmail.com](mailto:fran.upc@gmail.com) |
 | **Fork Maintainer** | [Rochmady (mokesano)](https://github.com/mokesano) |
-| **Forum Asli** | [PKP Support Forum (2013)](https://pkp.sfu.ca/support/forum/viewtopic.php?f=28&t=10962) |
+| **Original Forum** | [PKP Support Forum (2013)](https://pkp.sfu.ca/support/forum/viewtopic.php?f=28&t=10962) |
 | **PKP Statistics Framework** | [pkp.sfu.ca](https://pkp.sfu.ca/wiki/index.php?title=PKP_Statistics_Framework) |
 
 ---
 
 <p align="center">
   <br>
-  <sub>Diarsipkan dengan ❤️ sebagai bagian dari sejarah pengembangan OJS</sub>
+  <sub>Archived with ❤️ as part of OJS development history</sub>
   <br><br>
-  <sub>© 2016 Fran Máñez & Rochmady. Dilisensikan di bawah GPL‑2.0.</sub>
+  <sub>© 2016 Fran Máñez & Rochmady. Licensed under GPL‑2.0.</sub>
 </p>
