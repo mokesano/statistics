@@ -90,3 +90,4 @@ This plugin is an updated version of an older statistics plugin first published 
   <br><br>
   <sub>© 2016 Fran Máñez & Rochmady. Licensed under GPL‑2.0.</sub>
 </p>
+
